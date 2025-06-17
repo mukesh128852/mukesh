@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <div class="apps">
+        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail">
+        <img src="https://www.youtube.com/s/desktop/d7e8e0ec/img/favicon.ico" alt="YouTube">
+        <img src="https://www.google.com/maps/vt/icon/name=icons/spotlight/pegman_pinlet?scale=1" alt="Maps">
+        <img src="https://www.twitch.tv/favicon.ico" alt="Twitch">
+        <img src="https://www.amazon.in/favicon.ico" alt="Amazon">
+        <img src="https://chat.openai.com/favicon.ico" alt="ChatGPT">
+        <img src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png" alt="Reddit">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico" alt="Facebook">
+        <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter">
+        <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="LinkedIn">
+        <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram">
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="time-block">
+        <h1 id="clock">11:35</h1>
+        <p class="day">Tuesday</p>
+        <p class="date">17 June</p>
+
+        <div class="weather-info">
+          <p><i class="fas fa-wind"></i> Wind Speed</p>
+          <p><i class="fas fa-tint"></i> Humidity</p>
+          <p><i class="fas fa-cloud-showers-heavy"></i> Weather</p>
+        </div>
+        <p class="news">Trump Mobile’s made-in-US iPhone 17 competitor is really made in China</p>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Search Google or type a URL">
+      </div>
+
+      <img src="https://i.ibb.co/1Tk3NS7/cactus.png" class="cactus" alt="Cactus">
+    </div>
+
+    <div class="sidebar">
+      <i class="fas fa-bookmark"></i>
+      <i class="fas fa-search"></i>
+      <i class="fas fa-calendar-alt"></i>
+      <i class="fas fa-smile"></i>
+      <i class="fas fa-sync-alt"></i>
+      <i class="fas fa-lightbulb"></i>
+      <i class="fas fa-plus"></i>
+      <i class="fas fa-magic"></i>
+      <i class="fas fa-pencil-alt"></i>
+      <i class="fas fa-comment"></i>
+      <i class="fas fa-music"></i>
+    </div>
+  </div>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      document.getElementById('clock').textContent = `${hours}:${minutes}`;
+    }
+
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+<footer>
+    © 2025 | Created by Mukesh Kumar
+  </footer>
+</body>
+</html>

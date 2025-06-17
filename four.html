@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  background-color: #131921;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: orange;
+}
+
+.search-box {
+  width: 40%;
+  padding: 8px;
+}
+
+.search-btn {
+  padding: 8px 12px;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero-banner {
+  background-color: #f7e6e6;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 0 5px gray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">amazon<span>.in</span></div>
+    <input type="text" placeholder="Search Amazon.in" class="search-box" />
+    <button class="search-btn">🔍</button>
+    <div class="nav-links">
+      <a href="#">Sign In</a>
+      <a href="#">Returns & Orders</a>
+      <a href="#">Cart 🛒</a>
+    </div>
+  </header>
+
+  <div class="hero-banner">
+    <h2>Shop sarees Under ₹399</h2>
+    <p>Top Brands | Latest Trends</p>
+  </div>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Appliances for your home | Up to 55% off</h3>
+      <img src="https://via.placeholder.com/150" alt="AC & Fridge" />
+    </div>
+    <div class="card">
+      <h3>Revamp your home in style</h3>
+      <img src="https://via.placeholder.com/150" alt="Decor Items" />
+    </div>
+    <div class="card">
+      <h3>PlayStation 5 Slim & Accessories</h3>
+      <img src="https://via.placeholder.com/150" alt="PS5" />
+    </div>
+    <div class="card">
+      <h3>Under ₹499 | Home Essentials</h3>
+      <img src="https://via.placeholder.com/150" alt="Essentials" />
+    </div>
+  </section>
+</body>
+</html>
